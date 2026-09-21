@@ -1,0 +1,3 @@
+# Install into the project-local .runtime/rl_deps with --no-deps on the recorded environment.
+stable-baselines3==2.4.1
+gymnasium==1.0.0
