@@ -1,0 +1,23 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+
+proxies:
+  - name: "IPRoyal-US"
+    type: http
+    server: 194.50.146.51
+    port: 12323
+    username: "14a5c12cb7131"
+    password: "ce906de696"
+
+proxy-groups:
+  - name: "Proxy"
+    type: select
+    proxies:
+      - "IPRoyal-US"
+      - "DIRECT"
+
+rules:
+  - MATCH,Proxy
